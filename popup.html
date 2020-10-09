@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179609148-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-179609148-1');
+        </script>
+
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>PinTab</title>
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
+
+        <style>
+            html, body{
+                font-family: 'Poppins';
+                font-size: 14px;
+                margin: 0 auto;
+                min-height: 200px;
+                padding: 10px;
+                width: 500px;
+                position: relative;
+            }
+
+            input {
+                border: 1px solid #ccc;
+                -moz-border-radius: 5px;
+                -webkit-border-radius: 5px;
+                border-radius: 5px;
+                font-size: 15px;
+                padding: 7px 30px 7px 7px;
+                outline: 0;
+                -webkit-appearance: none;
+                width: 365px;
+                font-size: 13px;
+                line-height: 12px;
+                
+            }
+
+            input:focus{
+                border: 1px solid #000
+            }
+
+            #btn1{
+                color: #fff !important;
+                text-decoration: none;
+                background: #eb5d55;
+                width: 100px;
+                padding: 8px;
+                margin-left: -12px;
+                border-radius: 8px;
+                border: 0;
+                transition: all 0.04s ease 0s;
+            }
+
+            #btn1:hover {
+                background: #F77A73;
+                font-weight: 600;
+            }
+
+            #btn1:focus {
+                outline: none;
+            }
+
+            ul > div {
+                display: inline-block;
+            }
+
+            #list {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            #logo {
+                width: 40px;
+            }
+
+            .div {
+                box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.05);
+                border-radius: 5px;
+                padding: 20px 0 20px 0;
+                width: 100px;
+                text-align: center;
+                background-color: #fff;
+                margin: 10px 20px 20px 0;
+                position: relative;
+                transition: transform 0.2s;
+            }
+
+            .div .remove {
+                display: none;
+                margin: -9px 0 0 88px;
+                color: 	#C8C8C8;
+                font-size: 20px;
+            }
+
+            .div:hover .remove{
+                display: block;
+            }
+
+            .div:hover {
+                background: #FFFFFF;
+                box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.1);
+                transform: scale(1.05);
+                padding: 0 0 20px 0;
+                margin: 8px 20px 20px 0;
+            }
+            
+            .div:hover img {
+                transform: scale(1.05);
+            }
+
+            a.remove:hover {
+                cursor: pointer;
+                color: #F77A73;
+            }
+
+            #clearAll {
+                position: absolute;
+                right: 15px;
+                bottom: 5px;
+            }
+
+        </style>
+    </head>
+    <script src="popup.js"></script> 
+    <body>
+        
+        <div class="input">
+            <input id="URL">
+            <button id="btn1">pin tab</button>
+        </div>
+        <br>
+
+        <div id="main">
+            <ul id="list"></ul>
+        </div>
+
+        <script src="popup.js"></script> 
+        
+    </body>
+</html>
